@@ -4,7 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-   
+    android:paddingTop="50dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
     android:gravity="center_horizontal"
     android:layout_height="match_parent"
     android:background="@drawable/bgimg">
@@ -18,9 +20,8 @@
         android:layout_height="wrap_content">
         <TextView
             android:id="@+id/textView1"
-            android:textSize="30sp"
-            android:textColor="#5B0BAA"
-            android:text="Register"
+            android:textSize="30dp"
+            android:text="Login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
         <LinearLayout
@@ -30,50 +31,23 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:text="Having an account?"
+                android:text="Don't have an account?"
                 android:layout_height="wrap_content"/>
             <TextView
-                android:text="Login"
-                android:id="@+id/loginTextView"
+                android:id="@+id/createlogic"
+                android:text=" Create your account"
                 android:textColor="@color/newAccountColor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
         </LinearLayout>
     </LinearLayout>
-    <EditText
-        android:id="@+id/myEditText0"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:hint="Enter Name Of User"
-       android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp"
-        android:padding="10dp"
-        android:drawablePadding="10dp"
-        android:background="@drawable/rounded_boarder"
-        android:layout_gravity="center"
-        android:drawableLeft="@drawable/person"
-        android:inputType="text" />
-    <EditText
-        android:id="@+id/editText1"
-        android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:hint="Enter Email Address"
-         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="20dp"
-        android:padding="10dp"
-        android:drawablePadding="10dp"
-        android:background="@drawable/rounded_boarder"
-        android:layout_gravity="center"
-        android:drawableLeft="@drawable/mail"
-        android:inputType="text" />
+
     <EditText
         android:id="@+id/editText2"
         android:layout_width="match_parent"
         android:layout_height="55dp"
-        android:hint="Enter User Name"
-         android:layout_marginLeft="20dp"
+        android:hint="Enter User Name"  
+        android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
         android:padding="10dp"
@@ -87,7 +61,8 @@
         android:layout_width="match_parent"
         android:layout_height="55dp"
         android:hint="Enter Password"
-         android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginTop="20dp"
         android:padding="10dp"
@@ -96,16 +71,25 @@
         android:layout_gravity="center"
         android:drawableLeft="@drawable/passkey"
         android:inputType="textPassword" />
+    <TextView
+        android:layout_marginRight="24dp"
+        android:layout_gravity="right"
+        android:text="Forgot Password?"
+        android:layout_marginBottom="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
     <com.google.android.material.button.MaterialButton
-         android:id="@+id/registerButton"
-        android:layout_width="match_parent"
-        android:text="Register"
-        android:textSize="22sp"
+        android:id="@+id/LoginButton"
+        android:layout_width="200dp"
         android:backgroundTint="#1c57ef"
+        android:text="Login"
+        android:textSize="15sp"
         android:layout_marginHorizontal="60dp"
         android:paddingVertical="10dp"
         app:cornerRadius="25dp"
-        android:layout_height="wrap_content"/>
+        android:layout_height="50dp"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:text="Or Register With"
@@ -119,13 +103,13 @@
         android:orientation="horizontal"
         android:layout_height="wrap_content">
         <ImageButton
-            android:id="@+id/googlebutton"
+            android:id="@+id/Loginwithgoogle"
             android:layout_width="wrap_content"
             android:backgroundTint="@android:color/transparent"
             android:src="@drawable/googleplus"
             android:layout_height="wrap_content"/>
         <ImageButton
-            android:id="@+id/facebookbutton"
+            android:id="@+id/Loginwithfacebook"
             android:layout_width="wrap_content"
             android:backgroundTint="@android:color/transparent"
             android:src="@drawable/facebook"
